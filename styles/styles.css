@@ -1,0 +1,213 @@
+@font-face {
+  font-family: "Fjalla One", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+}
+body {
+  background-color: black;
+  font-family: "Fjalla One", sans-serif;
+  color: rgb(185, 71, 18);
+  text-decoration: none;
+}
+
+.title {
+  height: 30vh;
+  width: auto;
+  display: flex;
+  position: absolute;
+  top: -10vh;
+  left: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  text-decoration: none;
+  color: rgb(185, 71, 18);
+}
+
+.data {
+  position: absolute;
+  top: 12vh;
+}
+
+.local {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+.lista {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  height: 5vh;
+  text-decoration: none;
+  color: rgb(185, 71, 18);
+  top: 0;
+  right: 2vh;
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(185, 71, 18);
+}
+
+.q {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.data {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  width: auto;
+}
+
+.ubicacion {
+  display: flex;
+  justify-content: right;
+}
+
+.nombre {
+  position: absolute;
+  top: 20vh;
+  left: 80vh;
+  height: 10vh;
+  width: auto;
+  font-family: "Fjalla One", sans-serif;
+  font-size: small;
+  background-color: black;
+  color: rgb(185, 71, 18);
+}
+
+.mail {
+  position: absolute;
+  top: 20vh;
+  left: 100vh;
+  height: 10vh;
+  width: auto;
+  font-family: "Fjalla One", sans-serif;
+  font-size: small;
+  background-color: black;
+  color: rgb(185, 71, 18);
+}
+
+.comentario {
+  position: absolute;
+  top: 35vh;
+  left: 80vh;
+  font-family: "Fjalla One", sans-serif;
+  font-size: small;
+  background-color: black;
+  color: rgb(185, 71, 18);
+}
+
+.botond {
+  position: absolute;
+  top: 45vh;
+  left: 80vh;
+  font-family: "Fjalla One", sans-serif;
+  font-size: small;
+  background-color: black;
+  color: rgb(185, 71, 18);
+}
+
+.producto {
+  height: 50vh;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+}
+
+@media (max-width: 700px) {
+  .mobile {
+    display: flex;
+  }
+  .title {
+    position: absolute;
+    right: -20vh;
+  }
+  .lista {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 18vh;
+    font-size: 4vh;
+  }
+  .ubicacion {
+    position: absolute;
+    left: 110%;
+    font-size: 3vh;
+  }
+  .local {
+    justify-content: center;
+    position: absolute;
+    top: 20vh;
+  }
+  .data {
+    position: absolute;
+    top: 40vh;
+  }
+  .q {
+    position: absolute;
+    top: 35vh;
+  }
+  .nombre {
+    position: absolute;
+    top: 40vh;
+    left: 10vh;
+    height: 50vh;
+    width: 30vh;
+    font-size: xx-large;
+  }
+  .mail {
+    position: absolute;
+    top: 100vh;
+    left: 10vh;
+    height: 40vh;
+    width: 30vh;
+    font-size: xx-large;
+  }
+  .comentario {
+    position: absolute;
+    top: 150vh;
+    left: 10vh;
+    height: 70vh;
+    width: 80vh;
+    font-size: xx-large;
+  }
+  .botond {
+    position: absolute;
+    top: 240vh;
+    left: 10vh;
+    height: 50vh;
+    width: 40vh;
+    font-size: xx-large;
+  }
+  .producto {
+    height: 30vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 55px;
+    justify-content: flex-end;
+  }
+  .title {
+    height: 30vh;
+    width: auto;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
