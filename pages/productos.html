@@ -21,7 +21,29 @@
             </ul>
         </nav>
     </header>
-    <ul class="productos" id="productos">
+<ul class="productos" id="productos">
+    <button type="button" id="cart-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="cart-drawer">
+        <img src="../assets/carro.png" alt="Carrito" class="carrito">
+    </button>
+
+    <div id="cart-overlay"></div>
+
+    <aside id="cart-drawer">
+        <button type="button" id="cart-close" aria-label="Cerrar carrito">&times;</button>
+        <table id="carrito">
+        <thead>
+            <tr>
+                <th>Imagen</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        </table>
+    </aside>
         <div class="producto1" id="g">
             <img src="../assets/lespaul.png" alt="lp" class="lp" id="g">
             <h2 id="g">Guitarra</h2>
@@ -38,9 +60,9 @@
             <img src="../assets/teclado.jpg" alt="Teclado Digital" class="teclado">
             <h2>Teclados</h2>
             <h3>$450</h3>
-            <button class="botoncarrito" id="t">Añadir al carrito</button>
-        </div> 
+            <button class="botoncarrito" id="t">Añadir al carrito</button> 
     </ul>
+   
    <script src="../js/main.js" defer></script>
 </body>
 </html>
