@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resonancia Music Store - Productos</title>
+            <style>
+ @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+</style>
+    <link rel="stylesheet" href="../styles/styles.css">
+
+</head>
+<body>
+            <header>
+        <h1 class="title"><img src="../assets/logo.png" alt="logo"></h1>
+        <nav>
+            <ul class="lista">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+<ul class="productos" id="productos">
+    <button type="button" id="cart-toggle" aria-haspopup="dialog" aria-expanded="false" aria-controls="cart-drawer">
+        <img src="../assets/carro.png" alt="Carrito" class="carrito">
+    </button>
+
+    <div id="cart-overlay"></div>
+
+    <aside id="cart-drawer">
+        <button type="button" id="cart-close" aria-label="Cerrar carrito">&times;</button>
+        <table id="carrito">
+        <thead>
+            <tr>
+                <th>Imagen</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        </table>
+
+        <div id="cart-footer">
+            <p>Total: <span id="cart-total">$0.00</span></p>
+            <button type="button" id="btn-checkout">Finalizar compra</button>
+        </div>
+
+        <div id="checkout-form" style="display:none;">
+            <h3>Datos de pago</h3>
+            <p class="fake-notice">Simulación de pago — no se procesa ningún cobro real.</p>
+            <form id="payment-form">
+                <input type="text" id="card-name" placeholder="Nombre en la tarjeta" required>
+                <input type="text" id="card-number" placeholder="Número de tarjeta" maxlength="16" pattern="[0-9]{16}" required>
+                <div class="payment-row">
+                    <input type="text" id="card-expiry" placeholder="MM/AA" maxlength="5" pattern="(0[1-9]|1[0-2])\/[0-9]{2}" required>
+                    <input type="text" id="card-cvv" placeholder="CVV" maxlength="3" pattern="[0-9]{3}" required>
+                </div>
+                <button type="submit" id="btn-pagar">Pagar</button>
+                <button type="button" id="btn-cancel-checkout">Cancelar</button>
+            </form>
+        </div>
+
+        <div id="checkout-success" style="display:none;">
+            <p>✅ ¡Compra realizada con éxito!</p>
+            <button type="button" id="btn-close-success">Cerrar</button>
+        </div>
+    </aside>
+        <div class="producto1" id="g">
+            <img src="../assets/lespaul.png" alt="lp" class="lp" id="g">
+            <h2 id="g">Guitarra</h2>
+            <h3>$1000</h3>
+            <button class="botoncarrito" id="g">Añadir al carrito</button>
+        </div>
+        <div class="producto2" id="b">
+            <img src="../assets/bateria.jpg" alt="Batería Acústica" class="bateria">
+            <h2 id="b">Baterias</h2>
+            <h3>$1500</h3>
+            <button class="botoncarrito" id="b">Añadir al carrito</button>
+        </div>
+        <div class="producto3" id="t">
+            <img src="../assets/teclado.jpg" alt="Teclado Digital" class="teclado">
+            <h2>Teclados</h2>
+            <h3>$450</h3>
+            <button class="botoncarrito" id="t">Añadir al carrito</button> 
+    </ul>
+   
+   <script src="../js/main.js" defer></script>
+</body>
+</html>
